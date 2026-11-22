@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VegSafe | Healthy Vegetables, Healthy Life</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5fff7;color:#263b2a;line-height:1.6}
+nav{background:#176b3a;padding:16px 4%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{color:white;font-size:27px;font-weight:bold;white-space:nowrap}
+.nav-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:14px}
+.nav-links a{color:white;text-decoration:none;font-size:14px;font-weight:bold}
+.nav-links a:hover{color:#c8ffb5}
+.hero{background:linear-gradient(135deg,#dff5df,#efffed);text-align:center;padding:95px 20px}
+.hero h1{color:#176b3a;font-size:52px}
+.hero h2{font-size:29px;margin:10px 0}
+.hero p{max-width:700px;margin:15px auto 25px;font-size:18px}
+.btn{display:inline-block;background:#176b3a;color:white;padding:12px 25px;border-radius:8px;border:none;text-decoration:none;cursor:pointer;font-size:16px}
+.btn:hover{background:#104c29}
+.section{padding:65px 5%;text-align:center}
+.section h2{color:#176b3a;font-size:32px;margin-bottom:12px}
+.section-intro{max-width:750px;margin:0 auto;color:#526653}
+.cards{display:flex;justify-content:center;flex-wrap:wrap;gap:25px;margin-top:32px}
+.card{width:265px;background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.09);transition:transform .2s;text-align:center;padding-bottom:20px}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:185px;object-fit:cover;display:block;background:#e5f5e5}
+.card h3{color:#176b3a;margin:16px 12px 8px;font-size:20px}
+.card p{padding:0 16px;color:#526653}
+.card a{display:inline-block;color:#176b3a;font-weight:bold;margin-top:12px;text-decoration:none}
+.guide-section{background:#eaf7eb}
+.step{color:#176b3a;font-weight:bold;margin-top:8px}
+.form-section{background:#e5f5e5}
+form{max-width:520px;margin:25px auto 0}
+input,textarea{width:100%;padding:13px;margin:10px 0;border:1px solid #b5cdb7;border-radius:7px;font-size:16px;font-family:Arial}
+textarea{resize:vertical}
+.quiz-box{background:white;max-width:650px;margin:25px auto;padding:25px;border-radius:14px;box-shadow:0 4px 15px rgba(0,0,0,.08);text-align:left}
+.quiz-box h3{color:#176b3a;margin:15px 0 5px}
+.quiz-box label{display:block;margin:8px 0}
+.quiz-box input{width:auto;margin-right:8px}
+#quiz-result,#feedback-result,#contact-result{margin-top:15px;color:#176b3a;font-weight:bold}
+footer{background:#14532d;color:white;text-align:center;padding:35px 15px}
+footer h2{margin-bottom:8px}
+footer a{color:white;text-decoration:none;margin:8px}
+@media(max-width:850px){nav{flex-direction:column;gap:14px}.nav-links{justify-content:center}}
+@media(max-width:600px){.hero h1{font-size:38px}.hero h2{font-size:23px}.section{padding:45px 15px}.card{width:100%;max-width:350px}.nav-links a{font-size:13px}}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🥬 VegSafe</div>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#vegetables">Vegetables</a>
+<a href="#tips">Safety Tips</a>
+<a href="#washing">Washing</a>
+<a href="#storage">Storage</a>
+<a href="#food-safety">Food Safety</a>
+<a href="#quiz">Quiz</a>
+<a href="#feedback">Feedback</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<h1>Welcome to VegSafe 🥬</h1>
+<h2>Healthy Vegetables, Healthy Life</h2>
+<p>Your guide to fresh, healthy and safe vegetables. Learn how to select, wash and store vegetables properly for a healthier lifestyle.</p>
+<a href="#vegetables" class="btn">Explore Vegetables</a>
+</section>
+
+<section class="section" id="about">
+<h2>About VegSafe</h2>
+<p class="section-intro">VegSafe helps people understand vegetable hygiene, food safety and healthy eating habits. Our goal is to make every meal safer and healthier.</p>
+</section>
+
+<section class="section" id="vegetables">
+<h2>Explore Vegetables</h2>
+<p class="section-intro">Discover vegetables and their health benefits.</p>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1445282768818-728615cc910a?w=600" alt="Fresh carrots">
+<h3>🥕 Carrot</h3><p>Contains beta-carotene and supports eye health.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=600" alt="Fresh broccoli">
+<h3>🥦 Broccoli</h3><p>Provides fibre, vitamins and important nutrients.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=600" alt="Fresh tomatoes">
+<h3>🍅 Tomato</h3><p>Contains vitamin C and the antioxidant lycopene.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=600" alt="Fresh spinach">
+<h3>🥬 Spinach</h3><p>Provides folate, iron and vitamin K.</p>
+</div>
+</div>
+</section>
+
+<section class="section guide-section" id="tips">
+<h2>Vegetable Safety Tips</h2>
+<p class="section-intro">Three important ways to keep your vegetables safe.</p>
+<div class="cards">
+<div class="card">
+<img src="https://www.unitywater.com/-/media/unitywater/water-usage-kitchen/washing-vegetables-in-kitchen-sink-5.jpg?h=120&sc_lang=en&w=600" alt="Vegetables being washed under tap">
+<h3>🧼 Washing Guide</h3>
+<p>Wash vegetables under clean running water.</p>
+<a href="#washing">Read Washing Guide →</a>
+</div>
+<div class="card">
+<img src="https://images.herzindagi.info/her-zindagi-english/images/2024/09/24/article/image/greens-1727181767932.jpg" alt="Greens stored in refrigerator">
+<h3>❄️ Storage Guide</h3>
+<p>Store vegetables correctly to maintain freshness.</p>
+<a href="#storage">Read Storage Guide →</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600" alt="Clean kitchen">
+<h3>🥗 Food Safety</h3>
+<p>Keep food preparation areas and utensils clean.</p>
+<a href="#food-safety">Read Food Safety →</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="washing">
+<h2>🧼 Vegetable Washing Guide</h2>
+<p class="section-intro">Follow each step to clean vegetables properly.</p>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.pexels.com/photos/7262423/pexels-photo-7262423.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hands washing with soap under a tap">
+<h3>Step 1: Wash Your Hands</h3>
+<p>Wash your hands with soap and water for at least 20 seconds before handling vegetables.</p>
+<div class="step">Clean hands first!</div>
+</div>
+
+<div class="card">
+<img src="https://www.unitywater.com/-/media/unitywater/water-usage-kitchen/washing-vegetables-in-kitchen-sink-5.jpg?h=120&sc_lang=en&w=600" alt="Hands washing vegetables under running water">
+<h3>Step 2: Wash Vegetables</h3>
+<p>Rinse vegetables carefully under clean running water to remove visible dirt.</p>
+<div class="step">Remove visible dirt!</div>
+</div>
+
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/7efe1920-7eaf-433e-a965-40de0e26c987.8e4715bd30eae284c81d89bb6267dec2.jpeg?odnBg=FFFFFF&odnHeight=612&odnWidth=612" alt="Hand scrubbing potato with vegetable brush">
+<h3>Step 3: Scrub Firm Vegetables</h3>
+<p>Use a clean vegetable brush to scrub firm vegetables like potatoes and carrots.</p>
+<div class="step">Scrub gently!</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.apartmenttherapy.info/image/upload/v1558444474/k/archive/4172fc3ad5ed8e108aba0a33d0f9bc8ca54cc9be.jpg" alt="Hands drying washed vegetables with paper towel">
+<h3>Step 4: Dry Vegetables</h3>
+<p>Pat vegetables dry with a clean paper towel or cloth.</p>
+<div class="step">Keep them clean and dry!</div>
+</div>
+
+</div>
+</section>
+
+<section class="section guide-section" id="storage">
+<h2>❄️ Vegetable Storage Guide</h2>
+<p class="section-intro">Learn how to store different vegetables properly.</p>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.herzindagi.info/her-zindagi-english/images/2024/09/24/article/image/greens-1727181767932.jpg" alt="Leafy vegetables inside refrigerator drawer">
+<h3>🥬 Refrigerator Storage</h3>
+<p>Keep leafy vegetables in the refrigerator to maintain freshness.</p>
+</div>
+
+<div class="card">
+<img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F1iFR%2Fimage%2FCvks1z9dpR0DMVbV2CAoQHfuB3k.jpg" alt="Carrots stored in containers">
+<h3>🥕 Carrot Storage</h3>
+<p>Remove leafy tops and keep carrots refrigerated in a container.</p>
+</div>
+
+<div class="card">
+    <img src="https://pub-47c5c21e53814e8a8e1024b19488867f.r2.dev/2026/02/pexels-kaderdygnn-31390646.jpg" alt="Potatoes stored in a basket">
+<h3>🥔 Potato Storage</h3>
+<p>Store potatoes in a cool, dry and dark place.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=600" alt="Fresh tomatoes">
+<h3>🍅 Tomato Storage</h3>
+<p>Keep unripe tomatoes at room temperature until ripe.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="food-safety">
+<h2>🥗 Food Safety Guide</h2>
+<p class="section-intro">Good hygiene helps prevent germs from spreading during food preparation.</p>
+<div class="cards">
+<div class="card">
+<img src="https://images.pexels.com/photos/7262423/pexels-photo-7262423.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hands washing with soap">
+<h3>🧼 Hand Hygiene</h3><p>Wash hands with soap and water before preparing food.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600" alt="Food preparation">
+<h3>🔪 Separate Foods</h3><p>Use separate boards and utensils for raw meat and vegetables.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600" alt="Clean kitchen">
+<h3>✨ Clean Kitchen</h3><p>Clean kitchen counters and utensils before and after use.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600" alt="Fresh healthy food">
+<h3>🥗 Fresh Food</h3><p>Choose fresh vegetables and discard spoiled produce.</p>
+</div>
+</div>
+</section>
+
+<section class="section guide-section" id="quiz">
+<h2>🥗 VegSafe Food Safety Quiz</h2>
+<p class="section-intro">Test your food safety knowledge!</p>
+<div class="quiz-box">
+
+<h3>Question 1</h3>
+<p>What should you use to wash vegetables?</p>
+<label><input type="radio" name="q1" value="wrong"> Soap water</label>
+<label><input type="radio" name="q1" value="correct"> Clean running water</label>
+<label><input type="radio" name="q1" value="wrong"> Perfume water</label>
+
+<h3>Question 2</h3>
+<p>Where should leafy vegetables generally be stored?</p>
+<label><input type="radio" name="q2" value="wrong"> Direct sunlight</label>
+<label><input type="radio" name="q2" value="correct"> Refrigerator</label>
+<label><input type="radio" name="q2" value="wrong"> Near a hot stove</label>
+
+<h3>Question 3</h3>
+<p>What should you do before cutting vegetables?</p>
+<label><input type="radio" name="q3" value="correct"> Wash them properly</label>
+<label><input type="radio" name="q3" value="wrong"> Leave them dirty</label>
+<label><input type="radio" name="q3" value="wrong"> Add soap</label>
+
+<br><br>
+<button class="btn" type="button" onclick="checkQuiz()">Submit Quiz</button>
+<h3 id="quiz-result"></h3>
+</div>
+</section>
+
+<section class="section form-section" id="feedback">
+<h2>Share Your Feedback</h2>
+<p>We would love to hear your suggestions!</p>
+<form onsubmit="showFeedback(event)">
+<input type="text" placeholder="Enter your name" required>
+<input type="email" placeholder="Enter your email" required>
+<textarea rows="5" placeholder="Write your feedback" required></textarea>
+<button class="btn" type="submit">Submit Feedback</button>
+</form>
+<p id="feedback-result"></p>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+<p>Have questions or suggestions? Get in touch!</p>
+<form onsubmit="sendMessage(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+<p id="contact-result"></p>
+</section>
+
+<footer>
+<h2>🥬 VegSafe</h2>
+<p>Healthy Vegetables, Healthy Life</p>
+<p>Your guide to fresh, clean and safe vegetables.</p>
+<div style="margin:18px 0">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#vegetables">Vegetables</a>
+<a href="#contact">Contact</a>
+</div>
+<p>© 2026 VegSafe. All Rights Reserved.</p>
+</footer>
+
+<script>
+function checkQuiz(){
+let score=0;
+for(let i=1;i<=3;i++){
+let answer=document.querySelector('input[name="q'+i+'"]:checked');
+if(answer&&answer.value==="correct"){score++;}
+}
+document.getElementById("quiz-result").innerText="Your Score: "+score+" / 3";
+}
+function showFeedback(event){
+event.preventDefault();
+document.getElementById("feedback-result").innerText="Thank you for your feedback!";
+event.target.reset();
+}
+function sendMessage(event){
+event.preventDefault();
+document.getElementById("contact-result").innerText="Thank you! Your message has been entered.";
+event.target.reset();
+}
+</script>
+
+</body>
+</html>
