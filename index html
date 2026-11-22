@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegSafe - Vegetable Safety Checker</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f8e9;
+            color: #234b27;
+        }
+
+        header {
+            background: #237a3b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background: #185c2b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+            text-align: center;
+        }
+
+        footer {
+            background: #185c2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🥬 VegSafe</h1>
+    <p>Healthy Vegetables, Healthy Life</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="#vegetables">Vegetables</a>
+    <a href="#washing">Washing Guide</a>
+    <a href="#storage">Storage Guide</a>
+    <a href="#quiz">Food Safety Quiz</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to VegSafe!</h2>
+    <p>Learn how to choose, clean and store vegetables safely.</p>
+    <p>Let's make healthy food choices every day!</p>
+</section>
+
+<section class="cards">
+
+    <div class="card" id="vegetables">
+        <h3>🥦 Vegetable Safety</h3>
+        <p>Learn about common vegetable contamination risks.</p>
+    </div>
+
+    <div class="card" id="washing">
+        <h3>💧 Washing Guide</h3>
+        <p>Learn proper vegetable cleaning methods.</p>
+    </div>
+
+    <div class="card" id="storage">
+        <h3>❄️ Storage Guide</h3>
+        <p>Discover safe vegetable storage practices.</p>
+    </div>
+
+    <div class="card" id="quiz">
+        <h3>📝 Food Safety Quiz</h3>
+        <p>Test your food safety knowledge.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>VegSafe - Community Service Project</p>
+</footer>
+
+</body>
+</html>
